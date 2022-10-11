@@ -173,7 +173,7 @@ const MovieForm = (props) => {
           setImages(event.target.value);
         }}
       />
-      <DropMenu movieListForImages={movieList} />
+      <DropMenu />
 
      
 
@@ -249,8 +249,8 @@ const DropMenu = (props) => {
 
   return(
     <div className="dropdown">
-              <DropItem movie={movie} key={index}>Link One</DropItem>
-        {/* <button onClick={setOpen(true)} className="dropbtn">
+              <DropItem movie={movieList}>Link One</DropItem>
+      {/* <button onClick={setOpen(true)} className="dropbtn">
           Dropdown
         </button> */}
       {/* <ul onClickclassName="dropDownList">
